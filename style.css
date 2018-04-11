@@ -28,6 +28,9 @@ body {
   padding-right: 15px;
   padding-left: 15px;
 }
+ul.navbar-right li a svg {
+  fill: currentColor;
+}
 
 /* Mobile styles
 -------------------------------------------------- */
