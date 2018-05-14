@@ -26,7 +26,13 @@
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 			  <ul class="nav navbar-nav">
-				<li><a href="http://www.ustream.tv/channel/live-iss-stream" title="Ustream">Live stream</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Live stream <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="http://www.ustream.tv/channel/iss-hdev-payload">Earth viewing</a></li>
+						<li><a href="http://www.ustream.tv/channel/live-iss-stream">Inside viewing</a></li>
+					</ul>
+				</li>
 				<li><a href="http://www.esa.int/Our_Activities/Human_Spaceflight/International_Space_Station/Where_is_the_International_Space_Station" title="ESA">Live position</a></li>
 			  </ul>
 			  <ul class="nav navbar-nav navbar-right">
@@ -42,9 +48,14 @@
 		<!-- Content -->
 		<div class="container">
 			<p align="center">
-				<iframe width="625" height="270" src="http://www.ustream.tv/embed/9408562?html5ui" scrolling="no" allowfullscreen webkitallowfullscreen frameborder="0" style="border: 0 none transparent;"></iframe>
+				<!-- Real time live Earth viewing -->
+				<iframe width="625" height="270" src="http://www.ustream.tv/embed/17074538?html5ui" scrolling="no" allowfullscreen webkitallowfullscreen frameborder="0" style="border: 0 none transparent;"></iframe>
 				<br />
+				<!-- Real time position -->
 				<iframe width="625" height="575" src="http://wsn.spaceflight.esa.int/iss/index_portal.php"  scrolling="no" allowfullscreen webkitallowfullscreen frameborder="0" style="border: 0 none transparent;"></iframe>
+				<br />
+				<!-- Real time live inside viewing -->
+				<iframe width="625" height="270" src="http://www.ustream.tv/embed/9408562?html5ui" scrolling="no" allowfullscreen webkitallowfullscreen frameborder="0" style="border: 0 none transparent;"></iframe>
 			</p>
 		</div>
 		<!-- Footer -->
